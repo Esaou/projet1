@@ -1,0 +1,744 @@
+/* General */
+
+@font-face
+	{
+		font-family: 'robotoBlack';
+		src: url('fonts/Roboto-Black.ttf');
+	}
+@font-face
+	{
+		font-family: 'robotoRegular';
+		src: url('fonts/Roboto-Regular.ttf');
+	}
+@font-face
+	{
+		font-family: 'robotoMedium';
+		src:url('fonts/Roboto-Medium.ttf');
+	}
+body
+	{
+		margin: auto;
+		width: 100%;
+	}
+/* Chaines */
+
+header,.containerSlider,.slider,.loadLign,.containerTextImgKid,.servicesBis,.ourServices,.ourServicesTwo,.design,.icones,.icone,.contactBis,.form
+	{
+		display: flex;
+	}
+
+/* (Accueil) */
+
+.accueil
+	{
+		background-color: rgb(255,255,255);	
+		padding-bottom: 65px;
+		border-top: 1px solid white;
+	}
+
+	/* Logo + menu */
+
+header
+	{
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+		padding-bottom: 25px;
+		padding-top: 20px;
+		height: 30px;
+		position: fixed;
+		top: 0px;
+		background-color: rgb(255,255,255); 
+		box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+		width: 100%;
+		z-index: 100;		
+	}
+header img
+	{
+		width: 225px;		
+	}
+header td
+	{
+		height: 40px;
+		font-family: robotoMedium;
+		padding-top: 10px;
+	}
+header a
+	{
+		padding-top: 29px;
+		padding-right: 12px;
+		padding-left: 12px;
+		padding-bottom: 27px;
+		text-decoration: none;
+		color: rgb(122,122,122);
+		font-size: 14px;
+	}
+header a:hover
+	{
+		color: black;
+		border-top: 3px solid rgb(89,189,209);
+		border-radius: 1px;
+	}
+header a:active
+	{
+		color: rgb(115,115,115);
+	    border-top: 3px solid rgb(89,189,209);
+	}
+
+	/* Slider */
+
+.containerSlider
+	{
+		height: 525px;
+		margin-top: 75px;
+		position: relative;
+	}
+.slider
+	{
+		width: 100%;
+		max-width: 100%;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: flex-start;
+		vertical-align: bottom;
+		background: url(images/slider/bg1.jpg) no-repeat right 35% bottom 35%;
+		background-size: cover;
+	}
+
+	/* Text and button on the slider */
+	
+.presentationWord
+	{
+		color: rgb(92,173,211);
+	}
+.chevronRight
+	{
+		position: absolute;
+		right: 0px;
+		bottom: 210px;
+		color: white;
+		font-size: 20px;
+		padding-left: 15px;
+		padding-right: 8px;
+		padding-top: 25px;
+		padding-bottom: 25px;
+		border-bottom-left-radius: 80px;
+		border-top-left-radius: 80px;
+		background-color:rgba(45,45,45,0.4);
+	}
+.chevronLeft
+	{
+		position: absolute;
+		left: 0px;
+		bottom: 210px;
+		color: white;
+		font-size: 20px;
+		padding-left: 8px;
+		padding-right: 15px;
+		padding-top: 25px;
+		padding-bottom: 25px;
+		background-color:rgba(45,45,45,0.4);
+		border-bottom-right-radius: 80px;
+		border-top-right-radius: 80px;
+	}
+.lign
+	{
+		border:2px solid rgb(57,162,196);
+		border-radius: 2px;
+		width: 10%;
+	}
+.lignTwo
+	{
+		border:2px solid rgb(150,150,150);
+		width: 90%;
+		border-radius: 2px;
+		opacity: 0.3;
+	}
+.loadLign
+	{
+		flex-direction: row;
+	}
+.containerTextImgKid
+	{
+		flex-direction: column;
+		justify-content: flex-end;
+		align-items: center;
+		width: 60%;
+		height: 65%;	
+	}
+.textImgKid
+	{
+		width: 70%;
+		color: white;
+	}
+.lignAndChevron
+	{	
+		width: 100%;
+	}
+span
+	{
+		color: white;
+	}
+.firstSentence
+	{
+		font-family: robotoBlack;
+		font-size: 33px;
+		margin-bottom: 10px;
+	}
+.secondSentence
+	{
+		font-family: robotoMedium;
+		font-size: 13px;
+	}
+.button a 
+	{
+		display: block;
+		width:100px;
+		border-radius: 3px;
+		text-align:center;
+		background-color:rgb(92,173,211);
+		text-decoration: none;
+		color: white;
+		font-size: 17px;
+		padding-top: 9px;
+		padding-bottom: 9px;
+		padding-right: 5px;
+		padding-left: 5px;
+		border-bottom: 3px solid rgb(68,148,187);
+		font-family: robotoMedium;
+		margin-top: 20px;
+	}
+
+/* (NOS SERVICES) */
+
+.services
+	{
+		background-color: rgb(255,255,255);
+		padding-top: 45px;	
+	}
+.servicesBis
+	{
+		flex-direction: column;
+		justify-content: space-around;
+	}
+h1
+	{
+		text-align: center;
+		font-family: robotoBlack;
+		font-size: 45px;
+		color: rgb(39,39,39);
+	}
+h2
+	{
+		font-family: robotoBlack;
+		font-size: 18px;
+		color: rgb(39,39,39);
+		margin-top: 30px;
+		position: relative;
+		top: 5px;
+	}
+.ourServices
+	{
+		flex-direction: column;
+		align-items: center;
+	}
+.ourServicesTwo
+	{
+		flex-direction: row;
+		justify-content: space-around;
+		padding-bottom: 35px;	
+	}
+.firstSentenceOfServices
+	{
+		text-align: center;
+		width: 50%;
+		font-family: robotoMedium;
+		font-size: 14px;
+		color: rgb(100,104,109);
+	}
+.computer
+	{
+		height: 80%;
+	}
+.design
+	{
+		padding-right: 10px;
+		padding-left: 10px;
+		padding-top: 70px;
+		width: 45%;
+		flex-direction: row;
+		font-family: robotoMedium;
+		color: rgb(100,104,109);
+		font-size: 14px;	
+	}
+.services hr
+	{
+		width: 13%;
+		background-color: rgb(235,235,235);
+		border:none;
+		height: 1px;
+	}
+.circle
+	{
+		font-size: 15px;
+		color: rgb(92,173,211);
+		border:5px solid rgb(255,255,255);
+		position: relative;
+		bottom: 20px;
+	}
+.draw
+	{
+		border:2px solid rgb(240,240,240);
+		padding: 17px;
+		padding-right: 19px;
+		padding-left:19px;
+		border-radius: 36px;
+		font-size: 29px;
+		color: rgb(92,173,211);
+	}
+.circleTwo
+	{
+		position: relative;
+		left: 78px;
+		font-size: 12px;
+		z-index: 5;
+		color: rgb(92,173,211);
+		background-color: rgb(255,255,255);
+		border-radius: 20px;
+		padding: 4px;
+	}
+.icones
+	{
+		flex-direction: column;
+		padding-right: 10px;
+	}
+.icone
+	{
+		height: 100%;
+		width: 100%;
+		align-items: center;
+	}
+
+/*  (NOS PROJETS) */
+
+.projets
+	{
+		background-color: rgb(245,245,245);
+		padding-top: 45px;
+	}
+.projetsBis
+	{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+.ourProjects
+	{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+.firstSentenceOfProjects
+	{
+		text-align: center;
+		width: 75%;
+		font-family: robotoMedium;
+		font-size: 14px;
+		color: rgb(100,104,109);
+	}
+.projets hr
+	{
+		width: 18%;
+		background-color: rgb(235,235,235);
+		border:none;
+		height: 1px;
+	}
+.circleThree
+	{
+		color: rgb(92,173,211);
+		font-size: 15px;
+		padding: 5px;
+		background-color: rgb(255,255,255);
+		border-radius: 20px;
+		position: relative;
+		bottom: 20px;
+	}
+.smallMenu nav
+	{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}	
+.smallMenu a
+	{
+		width: 70px;	
+		padding: 10px;
+		background-color: rgb(229,229,229);
+		display: block;
+		text-align: center;
+		text-decoration: none;
+		color: rgb(141,144,148);
+		font-family: robotoMedium;
+		font-size: 15px;
+		margin-top: 25px;
+		margin-bottom: 30px;
+		border-bottom: 3px rgb(229,229,229) solid;
+	}
+.smallMenu a:hover
+	{
+		background-color: rgb(92,173,211);
+		border-bottom: 3px rgb(68,148,187) solid;
+		color: white;
+	}
+.arrow
+	{
+		display: none;
+		height: 0px;
+		border: none;
+		position: relative;
+		top: 3px;
+		color: rgb(37,142,176);
+		font-size: 20px;
+	}
+.smallMenu a:hover span
+	{
+		display: block;
+	}
+.begin
+	{
+		border-top-left-radius: 4px;
+		border-bottom-left-radius: 4px;
+	}
+.end
+	{
+		border-bottom-right-radius: 4px;
+		border-top-right-radius: 4px;
+	}		
+.photos img
+	{
+		width: 270px;
+		height: 185px;
+		margin-bottom: 25px;
+	}
+.photos
+	{
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		width: 87%;
+		margin-bottom: 45px;	
+	}
+.photos a
+	{
+		height: 185px;
+		margin-bottom: 20px;
+		text-decoration: none;
+	}
+.photos a:hover .portfolioDeco
+	{
+		display: block;
+	}
+.portfolioDeco
+	{
+		color: white;
+		font-family: RobotoMedium;
+		background-color: rgba(75,75,75,0.8);
+		padding: 10px;
+		padding-right: 20px;
+		position: relative;
+		bottom: 105px;
+		display: none;
+	}
+.firstSentencePortfolioDeco
+	{
+		font-family: robotoBlack;
+		font-size: 18px;
+	}
+.eye
+	{
+		padding: 10px;
+		border:2px solid white;
+		border-radius: 28px;
+		background-color: rgb(57,162,196);
+		color: white;
+		position: relative;
+		bottom: 40px;
+		left: 45px;
+	}
+
+/* (MAPS CONTACT) */ 
+
+.contact
+	{
+		padding-top: 75px;
+		background-color: rgb(245,245,245);
+		width: 100%;	
+		position: relative;
+	}
+.contactBis
+	{
+		flex-direction: column-reverse;
+		align-items: flex-end;
+		justify-content: center;
+	}
+.formulaire
+	{
+		background-color: rgba(250,250,255,0.9);
+		width: 350px;
+		margin-right: 25px;
+		z-index: 1;
+	}
+iframe
+	{
+		width: 100%;
+		height: 600px; 
+		opacity: 0.7;
+		border:none;
+	}
+.map
+	{
+		width: 100%;
+		height: 600px;
+		background-color: rgb(76,172,255);
+		position: absolute;
+	}
+form
+	{
+		flex-direction: column;
+		margin-top: 20px;
+		align-items: flex-start;
+		padding: 15px;
+	}
+input
+	{
+		margin-bottom: 15px;	
+		padding-right: 10px;
+		padding-left: 10px;
+		border-radius: 4px;
+		width: 90%;
+		height: 25px;
+		border:2px solid rgb(225,233,240);
+		color: rgb(153,153,153);
+	}
+textarea
+	{
+		width: 90%;
+		border:2px solid rgb(225,233,240);
+		border-radius: 4px;
+		padding-right: 10px;
+		padding-left: 10px;
+		font-family: robotoRegular;
+		padding-top: 10px;
+	}
+.formulaireInfo
+	{
+		font-family: robotoBlack;
+		font-size: 25px;
+		color: rgb(39,39,39);
+		margin-bottom: 12px;
+		font-weight: bold;
+	}
+.formulaireInfoBis
+	{
+		font-family: robotoMedium;
+		font-size: 14px;
+		color: rgb(107,111,116);
+	}
+.name 
+	{
+		font-weight: bold;
+		color: rgb(107,111,116);
+	}
+.telNbr
+	{
+		text-decoration: underline;
+		font-weight: bold;
+		color: rgb(107,111,116);
+	}
+.contact p
+	{
+		padding-left: 20px;
+	}
+.msg
+	{
+		height: 125px;
+	}
+.lastButton
+	{
+		width: 110px;
+		background-color:rgb(92,173,211);
+		color: white;
+		border-radius: 4px;
+		border:none;
+		border-bottom: 3px solid rgb(68,148,187);
+		text-align: center;
+		font-family: robotoMedium;
+		height: 35px;
+		margin-top: 15px;
+	}
+
+/* Responsive design */
+
+@media screen and (min-width: 1500px)
+	{
+		.accueil
+			{
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+		.containerSlider
+			{
+				width: 100%;
+				height: 650px;			
+			}
+		.services
+			{
+				display: flex;
+				justify-content: center;
+			}
+		.servicesBis
+			{
+				width: 1500px;
+			}
+		.projets
+			{
+				display: flex;
+				justify-content: center;
+				height: 100%;
+				padding-bottom: 100px;
+			}
+		.projetsBis
+			{
+				width: 1500px;
+			}
+		.map
+			{
+				height: 800px;
+			}
+		iframe
+			{
+				height: 800px;
+			}
+	}
+
+@media screen and (max-width: 1020px)
+	{
+		.containerSlider
+			{
+				height: 475px;
+			}
+		.overlay
+			{
+				background-color: rgb(0,0,0);
+				opacity: 0.65;
+				width: 100%;
+				height: 100%;
+				position: absolute;
+			}
+		.containerTextImgKid
+			{
+				width: 100%;
+				height: 100%;
+				justify-content: center;
+			}
+		.textImgKid
+			{
+				width: 70%;
+				z-index: 1;
+			}
+		.fa-chevron-right
+			{
+				visibility: hidden;	
+			}
+		.fa-chevron-left
+			{
+				visibility: hidden;
+			}	
+		.lignAndChevron
+			{
+				z-index: 1;
+			}
+		.services
+			{
+				height: 100%;
+				padding-bottom: 50px;
+				padding-left: 20px;
+				padding-right: 20px;
+			}
+		.ourServicesTwo
+			{
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+		.design
+			{
+				width: 95%;
+				padding-top: 30px;
+			}
+	}
+
+@media screen and (max-width: 637px)
+	{
+		header img
+			{
+				width: 30%;
+			}
+		header a
+			{
+				font-size: 12px;
+				padding-top: 31px;
+				padding-left: 5px;
+				padding-right: 5px;
+			}		
+		.ourServicesTwo img
+			{
+				width: 90%;
+			}	
+		.projets
+			{
+				height: 2150px;
+			}
+		.smallMenu nav
+			{
+				display: flex;
+				flex-direction: column;
+				margin-bottom: 35px;
+				margin-top: 35px;
+			}
+		.smallMenu a 
+			{
+				margin:0px;
+			}
+		.smallMenu a:hover span
+			{
+				display: none;
+			}
+		.begin
+			{
+				border-top-left-radius: 4px;
+				border-top-right-radius: 4px;
+				border-bottom-left-radius: 0px;
+			}
+		.end
+			{
+				border-bottom-left-radius: 4px;
+				border-bottom-right-radius: 4px;
+				border-top-right-radius: 0px;
+			}		
+		.contact
+			{
+				display: flex;
+				flex-direction: column-reverse;
+			}
+		.map
+			{
+				position: static;
+			}
+		.formulaire
+			{
+				width: 100%;
+				margin: auto;
+			}
+	}
